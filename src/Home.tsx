@@ -36,7 +36,7 @@ const MintButton = styled(Button)``; // add your styles here
 const useStyles = makeStyles((theme)=>({
   root: {
    textAlign:"center",
-
+   paddingBottom:"50px",
    "& h1":{
      fontSize:"30px",
      margin:"50px auto 30px auto",
@@ -285,6 +285,7 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
+    <>
     <main className="main-wrapper">
       <div className={`hero-section`}>
     <Header/>  
@@ -359,7 +360,7 @@ const Home = (props: HomeProps) => {
             <h6>Minting cost?</h6>
             <p>0.777 sol for all 7777 unit</p>
           </div>
-       
+
         </Container>
       </div>
 
@@ -382,6 +383,8 @@ const Home = (props: HomeProps) => {
         </Alert>
       </Snackbar>
     </main>
+      
+    </>
   );
 };
 
